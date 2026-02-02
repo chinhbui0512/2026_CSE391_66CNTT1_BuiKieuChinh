@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    margin: 0;
+}
+.navbar {
+    background-color: #000000;
+    color: white;
+    padding: 10px 3%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav a {
+    color: rgb(255, 255, 255);
+    margin-left: 5px;
+    font-size: 12px;
+    flex: 1 ;
+    text-align: left;
+}
+.search-box {
+    padding: 5px;
+    border-radius: 4px;
+    border: none;
+    font-size: 12px;
+}
+.container {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+}
+.container:first-child { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+table, th, td
+
+th {
+    background-color: #f8f9fa;
+    padding: 12px;
+    text-align: left;
+}
+
+td {
+    padding: 12px
+}
+.header {
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+table button {
+    padding: 5px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.head {
+    background: #1a73e8;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+.body {
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-top: none;
+    display: grid;   
+    gap: 15px;
+}
+
+.label {
+    font-weight: bold;
+    font-size: 19px;
+    display: block;
+}
+
+input[type="text"], input[type="email"], select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+.footer {
+    
+    text-align: right;
+    
+}
+
+.btn-save { background: #6c757d; color: white; }
+.btn-cancel { background: #28a745; color: white; }
+
+.footer button {
+    padding: 8px 25px;
+    border: none;
+}

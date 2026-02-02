@@ -1,0 +1,175 @@
+/* 1. Thiết lập chung */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #5EB198; /* Màu xanh nền bao quanh */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* 2. Khung chứa chính (Hộp màu trắng) */
+.container {
+    background-color: white;
+    width: 100%;
+    max-width: 1000px; /* Giới hạn chiều rộng giống hình */
+    border-radius: 8px; /* Bo góc nhẹ nếu muốn */
+    padding: 40px 60px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* 3. Header: Logo và Menu */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #5EB198; /* Màu xanh của logo */
+}
+
+.logo .dot {
+    color: #ff6b6b; /* Dấu chấm nhỏ màu đỏ nếu thích */
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    margin-left: 30px;
+    font-weight: 500;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+nav a:hover, nav a.active {
+    font-weight: 700;
+    color: #000;
+}
+
+/* 4. Phần nội dung chính (Chia 2 cột) */
+main {
+    display: flex;
+    align-items: center;
+    gap: 50px; /* Khoảng cách giữa chữ và ảnh */
+    margin-bottom: 40px;
+}
+
+/* Cột trái */
+.content-left {
+    flex: 1;
+}
+
+h1 {
+    font-size: 42px;
+    line-height: 1.2;
+    color: #222;
+    margin-bottom: 20px;
+    font-weight: 400; /* Font mỏng ở dòng trên */
+}
+
+h1 .highlight {
+    font-weight: 700;
+    color: #5EB198; /* Chữ EXCLUSIVE màu xanh */
+}
+
+p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    font-size: 15px;
+}
+
+p strong {
+    color: #333;
+}
+
+/* Nút Start now */
+.btn-start {
+    display: inline-flex;
+    align-items: center;
+    background-color: #5EB198;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+    box-shadow: 0 4px 10px rgba(94, 177, 152, 0.4);
+}
+
+.btn-start i {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.btn-start:hover {
+    background-color: #4a947d;
+}
+
+/* Cột phải: Ảnh */
+.content-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.content-right img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+/* 5. Footer */
+footer {
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+    text-align: center;
+    position: relative;
+}
+
+footer p {
+    font-size: 14px;
+    color: #555;
+    margin: 0;
+}
+
+/* Trang trí chấm bi ở góc footer (giống hình) */
+.dots-pattern {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 40px;
+    height: 20px;
+    background-image: radial-gradient(#5EB198 20%, transparent 20%);
+    background-size: 6px 6px;
+    opacity: 0.5;
+}
+
+/* Responsive: Dành cho điện thoại */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column-reverse; /* Đảo ngược để ảnh lên trên hoặc chữ lên trên tùy thích */
+        text-align: center;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .content-right img {
+        max-width: 250px;
+    }
+}

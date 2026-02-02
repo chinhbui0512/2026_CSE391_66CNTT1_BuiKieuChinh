@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Basic Info Form</title>
+    <link rel="stylesheet" href="Ex4.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Basic Info</h2>
+
+    <div class="group">
+        <div class="label">Employee ID</div>
+        <div class="value">9</div>
+    </div>
+
+    <div class="group">
+        <div class="label">Last Name</div>
+        <div class="value">Dodsworth</div>
+    </div>
+
+    <div class="group">
+        <div class="label">First Name</div>
+        <div class="content">
+            <input type="text" value="Anne">
+        </div>
+    </div>
+
+    <div class="group">
+        <div class="label">Gender</div>
+        <div class="radio-group">
+            <div class="radio-item">
+                <input type="radio" id="male" name="gender">
+                <label for="male">Male</label>
+            </div>
+            <div class="radio-item">
+                <input type="radio" id="female" name="gender">
+                <label for="female">Female</label>
+            </div>
+            <div class="radio-item">
+                <input type="radio" id="XXX" name="gender">
+                <label for="XXX">XXX</label>
+            </div>
+            <div class="radio-item">
+                <input type="radio" id="ZZZ" name="gender" >
+                <label for="ZZZ">ZZZ</label>
+            </div>
+        </div>
+    </div>
+
+    <div class="group">
+        <div class="label">Title</div>
+        <div class="content">
+            <input type="text" name="title" value="Sales Representative">
+        </div>
+    </div>
+
+    <div class="group">
+        <div class="label">Suffix</div>
+        <div class="content">
+            <input type="text" name="suffix" value="Ms.">
+        </div>
+    </div>
+
+    <div class="group">
+        <div class="label">Birth Date</div>
+        <div class="content">
+            <input type="text" name="birthdate" value="1966-02-07 00:00:00">
+        </div>
+    </div>
+
+    <div class="group">
+        <div class="label">Hire Date</div>
+        <div class="content">
+            <input type="text" name="hiredate" value="1994-11-05 00:00:00">
+        </div>
+    </div>
+
+    <div class="group">
+        <div class="label">SSN # (if applicable)</div>
+        <div class="content">
+            <input type="text" name="SSN">
+        </div>
+    </div>
+
+    <div class="group">
+        <div class="label">Report to</div>
+        <div class="content">
+            <select name="reportto">
+                <option value="2">Buchanan</option>
+                <option value="3">Margaret Peacock</option>
+            </select>
+        </div>
+    </div>
+
+    <h2>Contact Info</h2>
+    <div class="group">
+        <div class="label">Email</div>
+        <div class="content">
+            <input type="text" name="email" placeholder="name@example.com">
+        </div>
+    </div>
+    <div class="group">
+        <div class="label">Address</div>
+        <div class="content">
+            <input type="text" name="address" value="7 Houndstooth Rd.">
+        </div>
+    </div>
+    <div class="group">
+        <div class="label">City</div>
+        <div class="content">
+            <input type="text" name="city" value="London">
+        </div>
+    </div>
+    <div class="group">
+        <div class="label">Region</div>
+        <div class="content">
+            <input type="text" name="region">
+        </div>
+    </div>
+    <div class="group">
+        <div class="label">Postal Code</div>
+        <div class="content">
+            <input type="text" name="postalcode" value="WG2 7LT">
+        </div>
+    </div>
+    <div class="group">
+        <div class="label">Country</div>
+        <div class="content">
+            <select name="country">
+                <option value="1">Buchanan</option>
+                <option value="2">VietNam</option>
+            </select>
+        </div>
+    </div>
+    <div class="group">
+        <div class="label">Us Home Phone</div>
+        <div class="content">
+            <input type="text" name="homephone" value="(234)234-2342">
+        </div>
+    </div>
+    <div class="group">
+        <div class="label">Photo</div>
+        <div class="content">
+            <input type="text" name="photo" value="EmpID.bmp">
+        </div>
+    </div>
+    <h2>Optional Info</h2>
+    <div class="group">
+        <div class="label">Notes</div>
+        <div class="content">
+            <textarea name="notes" rows="4"></textarea>
+        </div>
+    </div>
+    <div class="group">
+        <div class="label">Preferred Shift</div>
+            <div class="content">
+                <input type="checkbox"> Regular<br>
+                <input type="checkbox"> Gravy Yard<br>
+            </div>
+        </div>
+    </div>
+    <div class="group">
+        <div class="label">Active?</div>
+            <div class="content">
+                <input type="checkbox">
+            </div>
+        </div>
+    </div>
+    <div class="group">
+        <div class="label">Are you human?</div>
+    </div>
+    <div class="footer">
+        <div class="left-group">
+        <button type="submit">◀ </button>
+        <button type="submit">▶</button>
+     <div class="required-text">* required</div>
+    </div>
+        <div class="right-group">
+        <button type="submit">💾 submit</button>
+        <button type="submit">✖ Cancel</button>
+    </div>
+</div> </body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HR Management</title>
+    <link rel="stylesheet" href="Ex5.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">HR Management</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Contact</a>
+         </nav>
+        <div class="searchbox">
+            <input type="text" placeholder="Search...">
+            <button>Search</button>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="container">
+            <h2>Employee</h2>
+            <button>+ Add</button>
+        </div>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Position</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Fatima Beatriz</td>
+                <td>Fatima Beatriz@gmail.com</td>
+                <td>0985674321</td>
+                <td>Staff</td>
+                <td><button>Edit</button> <button>Delete</button></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Gabriel Hanna</td>
+                <td>Gabriel Hanna@gmail.com</td>
+                <td>0985674322</td>
+                <td>Manager</td>
+                <td><button>Edit</button> <button>Delete</button></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Lucas Miguel</td>
+                <td>Lucas Miguel@gmail.com</td>
+                <td>0985674323</td>
+                <td>Staff</td>
+                <td><button>Edit</button> <button>Delete</button></td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="head">
+        <div class="header">New Employee</div>
+        <span class="x">X</span>
+    </div>
+    <div class="body">
+        <div class="group">
+            <div class="label">Name</div>
+            <input type="text" name="name">
+        </div>
+        <div class="group">
+            <div class="label">Email</div>
+            <input type="email" name="email">
+        </div>
+        <div class="group">
+            <div class="label">Phone</div>
+            <input type="text" name="phone">
+        </div>
+        <div class="group">
+        <div class="label">Position</div>
+        
+            <select name="position">
+                <option value="staff">Staff</option>
+                <option value="manager">Manager</option>
+                <option value="ceo">CEO</option>
+            </select>
+        
+    </div>
+
+    <div class="group">
+        <div class="label">Sex</div>
+        
+            <input type="radio" name="sex" id="male"> <label for="male">Male</label>
+            <input type="radio" name="sex" id="female"> <label for="female">Female</label>
+        
+    </div>
+    <div class="footer">
+        <button class="btn-cancel">Save</button>
+        <button class="btn-save">Cancel</button>
+    </main>
+
+</body>
+</html>
