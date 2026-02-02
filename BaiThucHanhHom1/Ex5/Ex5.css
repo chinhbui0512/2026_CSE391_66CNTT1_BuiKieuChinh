@@ -8,6 +8,7 @@ body {
     margin: 0;
 }
 .navbar {
+    font-size: 25px;
     background-color: #000000;
     color: white;
     padding: 10px 3%;
@@ -22,10 +23,10 @@ nav a {
     flex: 1 ;
     text-align: left;
 }
-.search-box {
-    padding: 5px;
-    border-radius: 4px;
-    border: none;
+.searchbox {
+    display: flex;         
+    align-items: center;  
+    gap: 5px;
     font-size: 12px;
 }
 .container {
@@ -42,16 +43,28 @@ nav a {
     
 }
 table, th, td
-
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
 th {
     background-color: #f8f9fa;
     padding: 12px;
     text-align: left;
+    
 }
 
 td {
-    padding: 12px
+    padding: 12px;
+
 }
+
+th:nth-child(1) { width: 50px; }  
+th:nth-child(2) { width: 20%; }   
+th:nth-child(3) { width: 25%; }   
+th:nth-child(4) { width: 20%; } 
+th:nth-child(5) { width: 20%; }
+
 .header {
     font-size: 18px;
     font-weight: bold;
@@ -68,19 +81,24 @@ table button {
 }
 
 .head {
+    width: 70%;
     background: #1a73e8;
-    color: white;
+    color: white;  
     padding: 15px;
     display: flex;
     justify-content: space-between;
-    margin-top: 25px;
+    
+    margin-bottom: 0;
+    margin: 50px auto 0 auto;
 }
 .body {
-    padding: 30px;
+    width: 70%;
+    padding: 15px 30px;
     border: 1px solid #ddd;
     border-top: none;
     display: grid;   
     gap: 15px;
+    margin: 0 auto 50px auto ;
 }
 
 .label {
@@ -98,10 +116,8 @@ input[type="text"], input[type="email"], select {
 }
 
 
-.footer {
-    
+.footer { 
     text-align: right;
-    
 }
 
 .btn-save { background: #6c757d; color: white; }
