@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+}
+
+.main {
+    max-width: 1000px;
+    width: 100%;
+}
+.page-title{
+    text-align: center;
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 70px;
+    line-height: 1.4;
+    font-weight: normal;
+}
+
+.container {
+    display: flex;
+    gap: 30px;
+}
+
+.card { 
+    width: 100%; 
+    background: white;
+    padding: 40px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08); /* Tạo bóng đổ mờ như ảnh  */
+    border-radius: 4px;
+}
+.card-quote {
+   font-family: 'Georgia', serif;
+   font-style: italic;
+   font-size: 20px;
+   line-height: 1.5;
+   color: #333;
+   margin-bottom: 20px;
+}
+.card-subtext {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    font-family: 'Courier New', Courier, monospace;
+}
+.card-author {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+.card-author .title {
+    margin-top: 10px;
+    color:royalblue;
+}
+
+.description {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.text-highlight {
+    color: #333;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.description p {
+    margin-bottom: 30px;
+}
