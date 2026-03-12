@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Quản lý Điểm Sinh Viên</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Quản lý Sinh Viên</h2>
+        
+        <div class="controls">
+            <input type="text" id="nameInput" placeholder="Họ và tên">
+            <input type="number" id="scoreInput" placeholder="Điểm" min="0" max="10">
+            <button id="addBtn">Thêm</button>
+        </div>
+
+        <div class="controls">
+            <input type="text" id="searchInput" placeholder="Tìm kiếm tên...">
+            <select id="filterSelect">
+                <option value="All">Tất cả xếp loại</option>
+                <option value="Giỏi">Giỏi</option>
+                <option value="Khá">Khá</option>
+                <option value="Trung bình">Trung bình</option>
+                <option value="Yếu">Yếu</option>
+            </select>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>STT</th>
+                    <th>Họ tên</th>
+                    <th id="sortScore">Điểm ▼</th>
+                    <th>Xếp loại</th>
+                    <th>Thao tác</th>
+                </tr>
+            </thead>
+            <tbody id="studentTableBody">
+                </tbody>
+        </table>
+        
+        <div class="stats" id="statsDisplay">Tổng số: 0 | Điểm TB: 0.00</div>
+    </div>
+
+    <script src="data.js"></script>
+</body>
+</html>
